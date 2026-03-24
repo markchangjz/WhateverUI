@@ -9,15 +9,15 @@ let package = Package(
         .iOS(.v16),
         .macOS(.v13),
     ],
-    dependencies: [
-        .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.21.0"),
-    ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "WhateverUI",
             targets: ["WhateverUI"]
         ),
+    ],
+    dependencies: [
+        .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.21.0"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
